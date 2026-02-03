@@ -1,0 +1,410 @@
+/* ==============================================
+   PRINT/PDF STYLESHEET - Single Page Resume
+   ============================================== */
+
+@page {
+  size: letter;
+  margin: 0.5in;
+}
+
+:root {
+  --text: #1a1a1a;
+  --muted: #4a4a4a;
+  --border: #d1d5db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 10.5pt;
+  line-height: 1.4;
+  color: var(--text);
+  background: white;
+  margin: 0;
+  padding: 0;
+  /* Web view: constrain width to match print */
+  max-width: 7.5in;
+  margin: 0 auto;
+  padding: 0.5in;
+}
+
+/* Header */
+.site-header {
+  background: none;
+  color: var(--text);
+  padding: 0;
+  border-bottom: 2pt solid var(--text);
+  margin-bottom: 10pt;
+  padding-bottom: 8pt;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 18pt;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.site-subtitle {
+  font-size: 11pt;
+  margin: 4pt 0 0;
+  color: var(--muted);
+}
+
+.contact-inline {
+  font-size: 9.5pt;
+  margin-top: 5pt;
+  color: var(--muted);
+}
+
+.contact-inline a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* No cards in print */
+.card {
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Section headers */
+h2 {
+  font-size: 11pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 0.5pt solid var(--border);
+  padding-bottom: 3pt;
+  margin: 12pt 0 6pt;
+  page-break-after: avoid;
+}
+
+h2:first-of-type {
+  margin-top: 0;
+}
+
+/* Collapsible sections - fully expanded */
+.section-collapse {
+  display: block !important;
+  margin: 0;
+}
+
+.section-collapse[open] > .section-content,
+.section-collapse > .section-content {
+  display: block !important;
+  max-height: none !important;
+  opacity: 1 !important;
+}
+
+.section-collapse summary {
+  display: block;
+  cursor: default;
+  list-style: none;
+  padding: 0;
+  border: none;
+}
+
+.section-collapse summary::-webkit-details-marker {
+  display: none;
+}
+
+.collapse-icon {
+  display: none;
+}
+
+/* Intro statement */
+.intro-statement {
+  font-size: 10.5pt;
+  line-height: 1.45;
+  margin-bottom: 8pt;
+}
+
+/* Impact stats - inline row */
+.impact-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 12pt;
+  margin: 6pt 0 8pt;
+  padding: 6pt 0;
+  border-top: 0.5pt solid var(--border);
+  border-bottom: 0.5pt solid var(--border);
+}
+
+.stat-item {
+  text-align: center;
+  background: none;
+  border: none;
+  padding: 0;
+  flex: 1;
+}
+
+.stat-number {
+  font-size: 14pt;
+  font-weight: 700;
+  color: var(--text);
+  display: block;
+}
+
+.stat-label {
+  font-size: 8pt;
+  color: var(--muted);
+  display: block;
+}
+
+/* Timeline - compact but readable */
+.launch-timeline {
+  padding-left: 0;
+  margin: 6pt 0;
+}
+
+.launch-timeline::before {
+  display: none;
+}
+
+.timeline-item {
+  padding: 3pt 0;
+  border-bottom: none;
+  margin-bottom: 3pt;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  display: none;
+}
+
+.timeline-date {
+  font-size: 9pt;
+  font-weight: 600;
+  color: var(--muted);
+  background: none;
+  padding: 0;
+  display: inline;
+}
+
+.timeline-title {
+  font-size: 10.5pt;
+  font-weight: 600;
+  display: inline;
+  margin-left: 6pt;
+}
+
+.timeline-subtitle {
+  font-size: 9pt;
+  color: var(--muted);
+  margin: 0;
+  display: inline;
+}
+
+.timeline-subtitle::before {
+  content: ' — ';
+}
+
+/* Hide timeline descriptions in print to save space */
+.timeline-desc {
+  display: none;
+}
+
+/* Markdown content */
+.markdown-content p {
+  color: var(--muted);
+  margin: 4pt 0;
+  font-size: 10pt;
+}
+
+.markdown-content ul {
+  padding-left: 16pt;
+  margin: 4pt 0;
+}
+
+.markdown-content li {
+  margin-bottom: 3pt;
+  font-size: 10pt;
+}
+
+.markdown-content strong {
+  color: var(--text);
+}
+
+/* Background section */
+.background-section {
+  font-size: 10pt;
+}
+
+.background-section p {
+  margin: 4pt 0;
+}
+
+/* Skills - two columns */
+.skills-section {
+  column-count: 2;
+  column-gap: 20pt;
+}
+
+.skills-category {
+  break-inside: avoid;
+  margin-bottom: 6pt;
+}
+
+.skills-category-title {
+  font-size: 9pt;
+  font-weight: 700;
+  margin-bottom: 2pt;
+  text-transform: uppercase;
+}
+
+.skills-tags {
+  display: inline;
+}
+
+.skill-tag {
+  display: inline;
+  background: none !important;
+  border: none;
+  padding: 0;
+  font-size: 9.5pt;
+  color: var(--text) !important;
+}
+
+.skill-tag::after {
+  content: ', ';
+}
+
+.skill-tag:last-child::after {
+  content: '';
+}
+
+/* Hide testimonials in print */
+.testimonial-grid {
+  display: none;
+}
+
+/* Awards line */
+.awards-line {
+  font-size: 9.5pt;
+  margin-top: 6pt;
+  color: var(--muted);
+}
+
+/* Hide Personal Projects in print */
+.secondary-section {
+  display: none;
+}
+
+/* Hide Recognition section in print to save space */
+.section-collapse:has(.testimonial-grid) {
+  display: none;
+}
+
+/* Patents - inline format */
+.patent-grid {
+  font-size: 9.5pt;
+  margin: 4pt 0;
+}
+
+.patent-row {
+  display: inline;
+}
+
+.patent-row::after {
+  content: ' | ';
+  color: var(--border);
+}
+
+.patent-row:last-child::after {
+  content: '';
+}
+
+.patent-name {
+  display: inline;
+}
+
+.patent-year {
+  display: inline;
+  color: var(--muted);
+  font-size: 9pt;
+}
+
+.patent-year::before {
+  content: ' (';
+}
+
+.patent-year::after {
+  content: ')';
+}
+
+.patent-lead,
+.patent-role {
+  display: none;
+}
+
+.patent-proprietary {
+  font-style: italic;
+}
+
+.patent-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.patent-footer {
+  display: none;
+}
+
+/* Page break control */
+h2, h3 {
+  page-break-after: avoid;
+}
+
+.card, .skills-category {
+  page-break-inside: avoid;
+}
+
+/* Hide interactive/web elements */
+.btn-print,
+.header-nav,
+.header-wrapper,
+.site-footer,
+.skip-link {
+  display: none !important;
+}
+
+.fade-in-section {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.contact-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Section content spacing */
+.section-content {
+  padding-top: 3pt;
+}
+
+/* Print-specific overrides */
+@media print {
+  body {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
