@@ -25,7 +25,7 @@ body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,H
 .container{max-width:900px;margin:28px auto;padding:0 20px}
 .site-header{background:linear-gradient(90deg, #0c1929 0%, #164e63 100%); color:white; padding:28px 0}
 .site-title{margin:0;font-size:1.6rem;transition:font-size 0.3s ease}
-.site-subtitle{margin:6px 0 0;opacity:0.9;max-height:30px;overflow:hidden;transition:opacity 0.3s ease,max-height 0.3s ease,margin 0.3s ease}
+.site-subtitle{margin:6px 0 0;opacity:0.9;max-height:80px;overflow:hidden;transition:opacity 0.3s ease,max-height 0.3s ease,margin 0.3s ease}
 .card{background:var(--card);border-radius:10px;padding:18px;margin:18px 0;box-shadow:0 6px 18px rgba(0,0,0,0.3);border:1px solid var(--border)}
 .markdown-content img{max-width:100%}
 h2{margin-top:0}
@@ -201,7 +201,7 @@ a:focus,button:focus,.btn-print:focus{outline:2px solid var(--accent);outline-of
 .btn-print:hover{background:rgba(255,255,255,0.18);text-decoration:none !important}
 
 /* A simple utility for contact details */
-.contact-inline{font-size:0.95rem;color:var(--muted);margin-left:8px;max-height:30px;overflow:hidden;transition:opacity 0.3s ease,max-height 0.3s ease,margin 0.3s ease}
+.contact-inline{font-size:0.95rem;color:var(--muted);margin-left:8px;max-height:80px;overflow:hidden;transition:opacity 0.3s ease,max-height 0.3s ease,margin 0.3s ease}
 
 /* ==============================================
    VISUAL TIMELINE
