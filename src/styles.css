@@ -153,6 +153,8 @@ a:focus,button:focus,.btn-print:focus{outline:2px solid var(--accent);outline-of
   .header-nav a{margin-right:0}
   .site-title{font-size:1.35rem}
   .site-subtitle{font-size:0.9rem}
+  .header-wrapper > div:first-child{text-align:center}
+  .contact-inline{margin-left:0}
   /* Timeline responsive */
   .launch-timeline{padding-left:20px}
   .launch-timeline::before{left:9px}
