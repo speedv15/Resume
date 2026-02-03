@@ -214,7 +214,17 @@ Tested implantable cardiac monitoring device software and developed field engine
   </div>
 </div>
 
-<!-- Additional projects can be added here -->
+<div class="project-card">
+  <h4 class="project-title">HomeVoice</h4>
+  <p class="project-subtitle">Local-First Voice & Home Automation Stack</p>
+  <p class="project-desc">Privacy-focused voice assistant exploring the separation between intent recognition and command execution. Built on HomeAssistant with custom AI orchestration, emphasizing robust validation and graceful handling of edge cases. Deployed in production managing home automation, security, and family-friendly interactions.</p>
+  <div class="project-tags">
+    <span class="project-tag">AI Orchestration</span>
+    <span class="project-tag">HomeAssistant</span>
+    <span class="project-tag">Voice AI</span>
+    <span class="project-tag">Privacy-First</span>
+  </div>
+</div>
 
 </div>
 </details>
