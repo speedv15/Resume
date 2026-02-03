@@ -201,7 +201,7 @@ Tested implantable cardiac monitoring device software and developed field engine
 <summary><h2>Personal Projects</h2><span class="collapse-icon"></span></summary>
 <div class="section-content">
 
-<p class="section-intro-muted">Side ventures exploring hardware, audio, and entrepreneurship.</p>
+<p class="section-intro-muted">Same impulse, different outlets. I like learning how things work and building things that do.</p>
 
 <div class="project-card">
   <h4 class="project-title">Mesh Audio</h4>
