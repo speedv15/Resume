@@ -8,7 +8,7 @@ I make complex technology usable at scale. As Medtronic's training architect for
 
 *Global Training & Education Development Lead* (2018–Present)
 - Training lead for five major DBS platform launches (Percept PC, SenSight, Percept RC, Adaptive DBS & Electrode Identifier)—created clinical workflows, curricula, and field readiness programs for each
-- Trained 70%+ of current US DBS sales force; 2,000+ healthcare professionals certified globally with >95% pass rates
+- Trained 70%+ of current US DBS sales force; 2,000+ healthcare professionals certified globally
 - Invented 7 patented automation tools (4 as lead inventor) solving real-world usability and scaling problems
 - Led development of BrainSense Virtual Patient simulator—delivered 5-10x ROI, became critical competitive advantage
 - Primary SME for Medical Safety on programming, BrainSense, Adaptive DBS, and surgical procedures

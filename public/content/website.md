@@ -63,7 +63,7 @@ Communicating until adoption happens: the educational programs that prepare fiel
 
 - **New Hire Training:** Designed and delivered core curriculum for DBS field personnel—70%+ of current US sales force trained directly
 - **Annual Course Load:** 12+ courses per year across New Hire, Internal Overview, Engineering, and Medical Education programs
-- **Certification Programs:** >95% pass rates with NPS scores consistently at +100
+- **Medical Education & Symposia:** 2,000+ healthcare professionals trained globally through physician education programs, conference workshops, and product launch symposia
 - **BrainSense Virtual Patient:** Led development of simulation platform delivering 5-10x ROI—became critical competitive advantage
 - **Subject Matter Expert:** Primary SME for Medical Safety on programming, BrainSense, Adaptive DBS, and surgical procedures
 
