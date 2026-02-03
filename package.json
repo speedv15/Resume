@@ -4,11 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "npm run export-md && vite build",
-    "preview": "vite preview",
-    "export-md": "node ./scripts/build-md.js",
-    "dev:refresh": "bash ./scripts/refresh-dev.sh",
-    "refresh:prod": "git pull --ff-only && npm ci && npm run build && npm run preview"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "marked": "^5.1.1"
