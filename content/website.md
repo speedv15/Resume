@@ -146,7 +146,7 @@ Workflow automation (7 patents) · Process optimization for scale · LLM applica
 <div class="background-section">
 
 **Medtronic Neuromodulation** (2015–Present)
-Started as DBS Clinical Specialist providing hands-on technical support for implants alongside neurosurgeons, neurologists, and patients. Promoted within first year, eventually becoming Global Training & Education Development Lead. This clinical foundation—understanding what makes complex technology usable in practice—shaped everything that followed.
+Started as DBS Clinical Specialist providing hands-on technical support for implants alongside neurosurgeons, neurologists, and patients. Promoted within first year, eventually becoming Global Training & Education Development Lead. That clinical foundation, learning what actually makes complex technology usable in practice, shaped everything that followed.
 
 **Stryker Endoscopy** — ProCare Specialist (2013–2015)
 Managed $6M in surgical equipment across 50 operating rooms at Thomas Jefferson University Hospital. Trained 250+ perioperative staff. Selected for Stryker Technology Council as top performer.
