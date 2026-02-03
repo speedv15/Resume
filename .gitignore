@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.DS_Store
+.env
+
+# Private/planning documents
+RESUME_PLAN.md
+Source Resume Files/
+content/master_profile.md
+
+# Pre-rendered files not needed for live site
+docs/master_profile.html
+docs/website.html
+
+# Dev tools and unused assets
+scripts/
+assets/
+
+# IDE and tool settings
+.claude/
+/.vscode/*
+!/.vscode/launch.json
+!/.vscode/tasks.json
