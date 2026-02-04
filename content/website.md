@@ -3,7 +3,7 @@
 <div class="impact-stats">
   <div class="stat-item">
     <span class="stat-number">>70%</span>
-    <span class="stat-label">of current US team I developed from new hire</span>
+    <span class="stat-label">of current US team developed from new hire</span>
   </div>
   <div class="stat-item">
     <span class="stat-number">2,000+</span>
