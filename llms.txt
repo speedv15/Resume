@@ -1,0 +1,37 @@
+# Christian de Laszlo
+
+> Training Architect for Deep Brain Stimulation. Global Training & Education
+> Development Lead at Medtronic Neuromodulation. Ten years building the bridge
+> between breakthrough brain technology and the clinicians who use it worldwide.
+
+Based in Little Silver, New Jersey, US. Contact: christian.delaszlo@gmail.com
+
+Key facts (all detailed on the pages below):
+
+- Training lead for five major DBS platform launches: Percept PC (2020, the
+  first DBS system able to sense brain signals), SenSight (2021), Percept RC
+  (2024), Adaptive DBS (2025, the largest commercial brain-computer interface
+  launch in history — one of TIME's Best Inventions of 2025), and Electrode
+  Identifier (2025).
+- Trained 70%+ of the current US DBS sales force; 2,000+ healthcare
+  professionals certified globally.
+- Inventor on 7 patented automation tools (4 as lead inventor), including
+  Automated Calibration of LFP Sensing Tools (EP4633448A1) and Bipolar/Unipolar
+  Stimulation Conversion (WO2024025913A1).
+- Led the BrainSense Virtual Patient simulator (5–10× ROI).
+- Primary subject-matter expert for Medical Safety on programming, BrainSense,
+  Adaptive DBS, and surgical procedures.
+- Recognized voice on where AI fits in neuromodulation.
+- Education: Cornell University, B.S. Human Biology, Health & Society (2013).
+
+## Pages
+
+- [Home](https://www.cdelaszlo.com/): full profile — experience,
+  launches, skills, patents, education, recognition, personal projects
+- [Resume](https://www.cdelaszlo.com/docs/resume.html): traditional
+  one-page resume
+
+## Profiles
+
+- [LinkedIn](https://www.linkedin.com/in/christian-de-laszlo-43b63642/)
+- [GitHub](https://github.com/speedv15)
