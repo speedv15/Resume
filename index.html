@@ -66,11 +66,22 @@
 }
 </script>
 
+<!-- Set theme before paint to avoid a flash of the wrong mode -->
+<script>
+  (function () {
+    try {
+      if (localStorage.getItem('cdl-resume-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (e) {}
+  })();
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/Resume/assets/index--lLtsosK.js"></script>
-  <link rel="stylesheet" crossorigin href="/Resume/assets/index-DcNN9JH-.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Geist:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/Resume/assets/index-B-colFjL.js"></script>
+  <link rel="stylesheet" crossorigin href="/Resume/assets/index-CkFNEcNB.css">
 </head>
 <body>
 
@@ -84,6 +95,7 @@
       <a href="#launches">Launches</a>
       <a href="#patents">Patents</a>
       <a href="docs/resume.html" target="_blank">Resume (PDF)</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
       <a class="nav-cta" href="mailto:christian.delaszlo@gmail.com">Get in touch</a>
     </nav>
   </div>
@@ -91,8 +103,8 @@
 
 <main id="main-content">
   <div class="wrap hero">
-    <div class="eyebrow reveal">Training Architect · Deep Brain Stimulation</div>
-    <h1 class="reveal">I make complex neurotechnology <em>usable at scale.</em></h1>
+    <div class="eyebrow reveal"><span class="dot"></span> Training Architect · <b>Deep Brain Stimulation</b></div>
+    <h1 class="reveal">I make complex neurotechnology <em>usable at <span class="caret-word">scale.</span></em></h1>
     <div class="hero-grid">
       <p class="hero-lead reveal">
         Global Training &amp; Education Development Lead at Medtronic Neuromodulation.
@@ -119,22 +131,25 @@
   </div>
 
   <div class="wrap reveal">
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-num">5</div>
-        <div class="stat-desc">Major DBS platform launches as training lead</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">70<sup>%+</sup></div>
-        <div class="stat-desc">Of the current US DBS sales force trained</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">2,000<sup>+</sup></div>
-        <div class="stat-desc">Healthcare professionals certified globally</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">7</div>
-        <div class="stat-desc">Patented automation tools, 4 as lead inventor</div>
+    <div class="stats-frame">
+      <span class="tick tl"></span><span class="tick tr"></span><span class="tick bl"></span><span class="tick br"></span>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-desc">Major DBS platform launches as training lead</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">70<sup>%+</sup></div>
+          <div class="stat-desc">Of the current US DBS sales force trained</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2,000<sup>+</sup></div>
+          <div class="stat-desc">Healthcare professionals certified globally</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">7</div>
+          <div class="stat-desc">Patented automation tools, 4 as lead inventor</div>
+        </div>
       </div>
     </div>
   </div>
@@ -142,7 +157,7 @@
   <section id="experience">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2>Experience</h2>
+        <h2><span class="idx">01</span>Experience</h2>
         <div class="sec-meta">2011–present · 13 years</div>
       </div>
 
@@ -218,7 +233,7 @@
   <section id="launches">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2>Five launches</h2>
+        <h2><span class="idx">02</span>Five launches</h2>
         <div class="sec-meta">Training lead · global scale</div>
       </div>
       <div class="launches reveal">
@@ -260,7 +275,7 @@
           <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="8.5" letter-spacing="3.2" fill="currentColor">
             <textPath href="#seal-arc" startOffset="0">TIME · BEST INVENTIONS · 2025 ·</textPath>
           </text>
-          <text x="60" y="57" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-style="italic" font-weight="400" font-size="21" fill="currentColor">2025</text>
+          <text x="60" y="57" text-anchor="middle" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="400" font-size="21" fill="currentColor">2025</text>
           <text x="60" y="72" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="6.5" letter-spacing="1.6" fill="currentColor">HONOREE</text>
         </svg>
         <div class="accolade-body">
@@ -290,7 +305,7 @@
   <section id="skills">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2>Skills</h2>
+        <h2><span class="idx">03</span>Skills</h2>
         <div class="sec-meta">Three disciplines · one bridge</div>
       </div>
       <div class="skills reveal">
@@ -314,7 +329,7 @@
     <div class="wrap duo">
       <div class="reveal">
         <div class="sec-head" style="margin-bottom: 28px;">
-          <h2>Patents</h2>
+          <h2><span class="idx">04</span>Patents</h2>
         </div>
         <div class="patents-figure">
           <div class="patents-num">7</div>
@@ -366,7 +381,7 @@
       </div>
       <div class="reveal">
         <div class="sec-head" style="margin-bottom: 28px;">
-          <h2>Education</h2>
+          <h2><span class="idx">05</span>Education</h2>
         </div>
         <div class="edu-school">Cornell University</div>
         <div class="edu-degree">B.S. Human Biology, Health &amp; Society · 2013</div>
@@ -381,7 +396,7 @@
   <section id="recognition">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2>Recognition</h2>
+        <h2><span class="idx">06</span>Recognition</h2>
         <div class="sec-meta">In their words</div>
       </div>
       <div class="quotes reveal">
@@ -417,7 +432,7 @@
   <section id="projects">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2>Personal projects</h2>
+        <h2><span class="idx">07</span>Personal projects</h2>
         <div class="sec-meta">Same impulse · different outlets</div>
       </div>
       <p class="projects-intro reveal">I like learning how things work and building things that do.</p>
