@@ -278,6 +278,54 @@ a.patent-name:hover { text-decoration: underline; }
 .edu-degree { font-size: 14.5px; color: var(--ink-dim); }
 .edu-extra { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--rule); font-size: 14px; line-height: 1.7; color: var(--ink-dim); }
 
+/* ── Recognition (testimonials) ───────────────── */
+.quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft); }
+.quote {
+  margin: 0; background: var(--paper); padding: 32px 28px;
+  display: flex; flex-direction: column; gap: 18px;
+  transition: background .3s;
+}
+.quote:hover { background: var(--paper-raise); }
+.quote blockquote {
+  margin: 0; font-family: var(--serif); font-weight: 400;
+  font-size: 17px; line-height: 1.4; letter-spacing: -0.01em;
+  color: var(--ink); position: relative; padding-top: 20px;
+}
+.quote blockquote::before {
+  content: '\201C'; position: absolute; top: -8px; left: -2px;
+  font-family: var(--serif); font-size: 46px; line-height: 1;
+  color: var(--blue); opacity: .35;
+}
+.quote figcaption {
+  margin-top: auto; font-family: var(--mono); font-size: 10px;
+  letter-spacing: 1.2px; text-transform: uppercase; color: var(--ink-faint);
+  line-height: 1.5;
+}
+.awards { margin-top: 32px; font-size: 14px; line-height: 1.7; color: var(--ink-dim); }
+.awards-label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 1.6px;
+  text-transform: uppercase; color: var(--blue); margin-right: 12px;
+}
+
+/* ── Personal projects ────────────────────────── */
+.projects-intro { font-size: 16.5px; line-height: 1.65; opacity: .85; max-width: 520px; margin: -20px 0 40px; }
+.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft); }
+.project {
+  background: var(--paper); padding: 36px 32px;
+  transition: background .3s;
+}
+.project:hover { background: var(--paper-raise); }
+.project-head { margin-bottom: 18px; }
+.project-title { font-family: var(--serif); font-size: 24px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.15; margin: 0 0 4px; }
+.project-sub { font-family: var(--mono); font-size: 10.5px; letter-spacing: 1.4px; text-transform: uppercase; color: var(--blue); }
+.project-desc { font-size: 14px; line-height: 1.65; opacity: .85; margin: 0 0 22px; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.project-tag {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--ink-dim);
+  border: 1px solid var(--rule); padding: 5px 11px; border-radius: 999px;
+}
+
 /* ── Footer / contact ─────────────────────────── */
 footer { margin-top: 96px; border-top: 1px solid var(--rule); }
 .foot { padding-top: 64px; padding-bottom: 72px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 64px; align-items: end; }
@@ -310,5 +358,7 @@ footer { margin-top: 96px; border-top: 1px solid var(--rule); }
   .accolade-link { grid-column: 2; justify-self: start; }
   .nav-links a:not(.nav-cta) { display: none; }
   .skills { grid-template-columns: 1fr; gap: 32px; }
+  .quotes { grid-template-columns: 1fr; }
+  .projects { grid-template-columns: 1fr; }
   .foot-meta { text-align: left; }
 }
