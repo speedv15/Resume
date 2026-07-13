@@ -1,6 +1,7 @@
-// Theme toggle: light is primary; dark persists across visits.
+// Theme toggle: dark is the default; a manual choice persists across visits.
 // The initial theme is applied pre-paint by an inline script in index.html.
-const themeKey = 'cdl-resume-theme'
+// v2 key: ignores theme prefs persisted by the previous design.
+const themeKey = 'cdl-theme-v2'
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.theme-toggle')

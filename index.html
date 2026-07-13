@@ -98,11 +98,12 @@
 </script>
 
 <!-- Set theme before paint to avoid a flash of the wrong mode.
-     Dark is the default; light only when the visitor has toggled to it. -->
+     Dark is the default; light only when the visitor has toggled to it.
+     v2 key: ignores theme prefs persisted by the previous design. -->
 <script>
   (function () {
     var t;
-    try { t = localStorage.getItem('cdl-resume-theme'); } catch (e) {}
+    try { t = localStorage.getItem('cdl-theme-v2'); } catch (e) {}
     document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
   })();
 </script>
