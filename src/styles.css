@@ -419,6 +419,8 @@ footer { margin-top: 92px; border-top: 1px solid var(--line); }
 
 @media (max-width: 880px) {
   .wrap { padding: 0 24px; }
+  /* .wrap's shorthand above would zero the hero's vertical padding — re-assert it */
+  .hero { padding-top: 48px; padding-bottom: 60px; }
   .hero-grid, .duo, .foot { grid-template-columns: 1fr; gap: 40px; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .launches { grid-template-columns: repeat(2, 1fr); }
