@@ -28,8 +28,8 @@
 
 <meta name="google-site-verification" content="dpwuC1n6WgR3qlERzvZDWhXc-PhsXKfV_6kqNqxKpe4" />
 
-<!-- Browser chrome color (matches --paper) -->
-<meta name="theme-color" content="#f7f5f0" />
+<!-- Browser chrome color (matches dark --paper, the default theme) -->
+<meta name="theme-color" content="#0E1315" />
 
 <!-- Favicon -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -40,7 +40,7 @@
   "@context": "https://schema.org",
   "@type": "ProfilePage",
   "url": "https://www.cdelaszlo.com/",
-  "dateModified": "2026-07-02T12:00:00-04:00",
+  "dateModified": "2026-07-12T12:00:00-04:00",
   "mainEntity": {
     "@type": "Person",
     "@id": "https://www.cdelaszlo.com/#person",
@@ -97,22 +97,21 @@
 }
 </script>
 
-<!-- Set theme before paint to avoid a flash of the wrong mode -->
+<!-- Set theme before paint to avoid a flash of the wrong mode.
+     Dark is the default; light only when the visitor has toggled to it. -->
 <script>
   (function () {
-    try {
-      if (localStorage.getItem('cdl-resume-theme') === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
-    } catch (e) {}
+    var t;
+    try { t = localStorage.getItem('cdl-resume-theme'); } catch (e) {}
+    document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
   })();
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Geist:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/assets/index-B-colFjL.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CkFNEcNB.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Geist:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/assets/index-BZjbgmF9.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BViB_VAH.css">
 </head>
 <body>
 
@@ -120,10 +119,11 @@
 
 <header>
   <div class="wrap nav">
-    <a class="nav-name" href="#">Christian de Laszlo</a>
+    <a class="nav-name" href="#" aria-label="Christian de Laszlo — home">Christian de Laszlo</a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="#experience">Experience</a>
       <a href="#launches">Launches</a>
+      <a href="#build">Things I build</a>
       <a href="#patents">Patents</a>
       <a href="docs/resume.html" target="_blank">Resume (PDF)</a>
       <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
@@ -134,8 +134,8 @@
 
 <main id="main-content">
   <div class="wrap hero">
-    <div class="eyebrow reveal"><span class="dot"></span> Training Architect · <b>Deep Brain Stimulation</b></div>
-    <h1 class="reveal">I make complex neurotechnology <em>usable at <span class="caret-word">scale.</span></em></h1>
+    <canvas id="wave" aria-hidden="true"></canvas>
+    <h1 class="reveal">I make complex<br />neurotechnology<br /><em>usable at <span class="wave-origin">scale.</span></em></h1>
     <div class="hero-grid">
       <p class="hero-lead reveal">
         Global Training &amp; Education Development Lead at Medtronic Neuromodulation.
@@ -146,15 +146,15 @@
       </p>
       <div class="hero-facts reveal">
         <div>
-          <div class="fact-label">Currently</div>
+          <div class="fact-label mono">Currently</div>
           <div class="fact-value">Medtronic Neuromodulation<br />2016–present</div>
         </div>
         <div>
-          <div class="fact-label">Based in</div>
+          <div class="fact-label mono">Based in</div>
           <div class="fact-value">Little Silver, New Jersey</div>
         </div>
         <div>
-          <div class="fact-label">Contact</div>
+          <div class="fact-label mono">Contact</div>
           <div class="fact-value"><a href="mailto:christian.delaszlo@gmail.com">christian.delaszlo@gmail.com</a></div>
         </div>
       </div>
@@ -162,25 +162,22 @@
   </div>
 
   <div class="wrap reveal">
-    <div class="stats-frame">
-      <span class="tick tl"></span><span class="tick tr"></span><span class="tick bl"></span><span class="tick br"></span>
-      <div class="stats">
-        <div class="stat">
-          <div class="stat-num">5</div>
-          <div class="stat-desc">Major DBS platform launches as training lead</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">70<sup>%+</sup></div>
-          <div class="stat-desc">Of the current US DBS sales force trained</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">2,000<sup>+</sup></div>
-          <div class="stat-desc">Healthcare professionals certified globally</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">7</div>
-          <div class="stat-desc">Patented automation tools, 4 as lead inventor</div>
-        </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num num">5</div>
+        <div class="stat-desc">Major DBS platform launches as training lead</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num num">70<sup>%+</sup></div>
+        <div class="stat-desc">Of the current US DBS sales force trained</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num num">2,000<sup>+</sup></div>
+        <div class="stat-desc">Healthcare professionals certified globally</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num num">7</div>
+        <div class="stat-desc">Patented automation tools, 4 as lead inventor</div>
       </div>
     </div>
   </div>
@@ -189,73 +186,75 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <h2><span class="idx">01</span>Experience</h2>
-        <div class="sec-meta">2011–present · 13 years</div>
+        <div class="sec-meta mono">2011–present · 13 years</div>
       </div>
 
-      <div class="role current reveal">
-        <div class="role-when">2018–present</div>
-        <div>
-          <h3 class="role-title">Global Training &amp; Education Development Lead</h3>
-          <div class="role-org">Medtronic Neuromodulation <span class="pill">Current</span></div>
-          <p class="role-lead">
-            Training architect for Deep Brain Stimulation. I design how the world's
-            most advanced neurostimulation systems get learned by sales forces,
-            surgeons, and programming clinicians across the globe.
-          </p>
-          <ul>
-            <li>Training lead for five major DBS platform launches, including the largest commercial brain-computer interface launch in history</li>
-            <li>Trained 70%+ of the current US DBS sales force; 2,000+ healthcare professionals certified globally</li>
-            <li>Invented 7 patented automation tools (4 as lead inventor) solving real-world usability and scaling problems</li>
-            <li>Led the BrainSense Virtual Patient simulator, which delivers 5–10× ROI and is now a critical competitive advantage</li>
-            <li>Primary subject-matter expert for Medical Safety on programming, BrainSense, Adaptive DBS, and surgical procedures</li>
-            <li>Recognized voice on where AI fits in neuromodulation, from clinician-facing tools to how the field learns and scales</li>
-          </ul>
+      <div class="roles">
+        <div class="role card current reveal">
+          <div class="role-when">2018–present</div>
+          <div>
+            <h3 class="role-title">Global Training &amp; Education Development Lead</h3>
+            <div class="role-org">Medtronic Neuromodulation <span class="pill">Current</span></div>
+            <p class="role-lead">
+              Training architect for Deep Brain Stimulation. I design how the world's
+              most advanced neurostimulation systems get learned by sales forces,
+              surgeons, and programming clinicians across the globe.
+            </p>
+            <ul>
+              <li>Training lead for five major DBS platform launches, including the largest commercial brain-computer interface launch in history</li>
+              <li>Trained 70%+ of the current US DBS sales force; 2,000+ healthcare professionals certified globally</li>
+              <li>Invented 7 patented automation tools (4 as lead inventor) solving real-world usability and scaling problems</li>
+              <li>Led the BrainSense Virtual Patient simulator, which delivers 5–10× ROI and is now a critical competitive advantage</li>
+              <li>Primary subject-matter expert for Medical Safety on programming, BrainSense, Adaptive DBS, and surgical procedures</li>
+              <li>Recognized voice on where AI fits in neuromodulation, from clinician-facing tools to how the field learns and scales</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="role reveal">
-        <div class="role-when">2016–2018</div>
-        <div>
-          <h3 class="role-title">DBS Clinical Specialist</h3>
-          <div class="role-org">Medtronic Neuromodulation</div>
-          <ul>
-            <li>Technical support for DBS implants and programming alongside neurosurgeons and neurologists</li>
-            <li>Managed top DBS implanters in territory; promoted within first year on performance</li>
-          </ul>
+        <div class="role card reveal">
+          <div class="role-when">2016–2018</div>
+          <div>
+            <h3 class="role-title">DBS Clinical Specialist</h3>
+            <div class="role-org">Medtronic Neuromodulation</div>
+            <ul>
+              <li>Technical support for DBS implants and programming alongside neurosurgeons and neurologists</li>
+              <li>Managed top DBS implanters in territory; promoted within first year on performance</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="role reveal">
-        <div class="role-when">2015–2016</div>
-        <div>
-          <h3 class="role-title">Navigation Clinical Specialist</h3>
-          <div class="role-org">Medtronic</div>
-          <ul>
-            <li>Cranial navigation technology in surgical settings; foundation in neuromodulation</li>
-          </ul>
+        <div class="role card reveal">
+          <div class="role-when">2015–2016</div>
+          <div>
+            <h3 class="role-title">Navigation Clinical Specialist</h3>
+            <div class="role-org">Medtronic</div>
+            <ul>
+              <li>Cranial navigation technology in surgical settings; foundation in neuromodulation</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="role reveal">
-        <div class="role-when">2013–2015</div>
-        <div>
-          <h3 class="role-title">ProCare Specialist</h3>
-          <div class="role-org">Stryker Endoscopy · Thomas Jefferson University Hospital</div>
-          <ul>
-            <li>Clinical support for $6M of surgical equipment across 50 operating rooms</li>
-            <li>Selected for Stryker Technology Council as a top performer</li>
-          </ul>
+        <div class="role card reveal">
+          <div class="role-when">2013–2015</div>
+          <div>
+            <h3 class="role-title">ProCare Specialist</h3>
+            <div class="role-org">Stryker Endoscopy · Thomas Jefferson University Hospital</div>
+            <ul>
+              <li>Clinical support for $6M of surgical equipment across 50 operating rooms</li>
+              <li>Selected for Stryker Technology Council as a top performer</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="role reveal" style="border-bottom: 1px solid var(--rule);">
-        <div class="role-when">2011–2013</div>
-        <div>
-          <h3 class="role-title">Engineering Intern</h3>
-          <div class="role-org">Angel Medical Systems</div>
-          <ul>
-            <li>Tested implantable cardiac device software; built hardware to FDA specifications</li>
-          </ul>
+        <div class="role card reveal">
+          <div class="role-when">2011–2013</div>
+          <div>
+            <h3 class="role-title">Engineering Intern</h3>
+            <div class="role-org">Angel Medical Systems</div>
+            <ul>
+              <li>Tested implantable cardiac device software; built hardware to FDA specifications</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -265,31 +264,31 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <h2><span class="idx">02</span>Five launches</h2>
-        <div class="sec-meta">Training lead · global scale</div>
+        <div class="sec-meta mono">Training lead · global scale</div>
       </div>
       <div class="launches reveal">
-        <div class="launch">
+        <div class="launch card">
           <div class="launch-year">2020</div>
           <div class="launch-name">Percept&nbsp;PC</div>
           <div class="launch-desc">The first DBS system able to sense brain signals.</div>
         </div>
-        <div class="launch">
+        <div class="launch card">
           <div class="launch-year">2021</div>
           <div class="launch-name">SenSight</div>
           <div class="launch-desc">Directional leads, guided by what the brain reports.</div>
         </div>
-        <div class="launch">
+        <div class="launch card">
           <div class="launch-year">2024</div>
           <div class="launch-name">Percept&nbsp;RC</div>
           <div class="launch-desc">Rechargeable platform with the same sensing fidelity.</div>
         </div>
-        <div class="launch">
+        <div class="launch card">
           <div class="launch-year">2025</div>
           <div class="launch-name">Adaptive&nbsp;DBS</div>
           <div class="launch-desc">Therapy that adjusts itself. The largest commercial BCI launch in history.</div>
           <div class="launch-award">TIME Best Inventions 2025</div>
         </div>
-        <div class="launch">
+        <div class="launch card">
           <div class="launch-year">2025</div>
           <div class="launch-name">Electrode&nbsp;Identifier</div>
           <div class="launch-desc">Automation that removes a fiddly cognitive task from the clinic.</div>
@@ -306,7 +305,7 @@
           <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="8.5" letter-spacing="3.2" fill="currentColor">
             <textPath href="#seal-arc" startOffset="0">TIME · BEST INVENTIONS · 2025 ·</textPath>
           </text>
-          <text x="60" y="57" text-anchor="middle" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="400" font-size="21" fill="currentColor">2025</text>
+          <text x="60" y="57" text-anchor="middle" font-family="'Space Grotesk', system-ui, sans-serif" font-weight="500" font-size="21" fill="currentColor">2025</text>
           <text x="60" y="72" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="6.5" letter-spacing="1.6" fill="currentColor">HONOREE</text>
         </svg>
         <div class="accolade-body">
@@ -319,13 +318,59 @@
     </div>
   </section>
 
+  <!-- amber region: things I build for myself — the accent warms teal → analog here -->
+  <section id="build" class="analog-region">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2><span class="idx">03</span>Things I build</h2>
+        <div class="sec-meta mono">Personal · nights &amp; weekends</div>
+      </div>
+      <p class="build-intro reveal">
+        The signal work doesn't stop at the office. Same instinct as the day job —
+        learn how a system really works, then build the thing that makes it usable —
+        pointed at whatever I'm curious about, from analog audio to a local-first home stack.
+      </p>
+      <div class="build-grid reveal">
+        <div class="build card">
+          <div class="build-meta mono"><span>Ongoing</span><span>Analog audio</span></div>
+          <div class="build-name">Mesh Audio</div>
+          <div class="build-desc">
+            Boutique, handbuilt guitar effects pedals — including the JuiceJawn envelope
+            filter with custom-wound optocouplers. End-to-end product work from circuit
+            design through enclosure fabrication, sold on Reverb and by commission to
+            players in Phish, Dopapod, Muscle Tough, and Grammy-winning studios.
+          </div>
+          <div class="build-tags">
+            <span class="build-tag">Analog circuit design</span>
+            <span class="build-tag">Manufacturing</span>
+            <span class="build-tag">E-commerce</span>
+          </div>
+        </div>
+        <div class="build card">
+          <div class="build-meta mono"><span>Ongoing</span><span>Local-first AI</span></div>
+          <div class="build-name">HomeVoice</div>
+          <div class="build-desc">
+            A privacy-first home voice assistant built on Home Assistant, exploring the
+            split between intent recognition and command execution. Custom AI
+            orchestration with hard validation and graceful edge-case handling — running
+            in production for a household, security and family interactions included.
+          </div>
+          <div class="build-tags">
+            <span class="build-tag">AI orchestration</span>
+            <span class="build-tag">Home Assistant</span>
+            <span class="build-tag">Voice AI</span>
+            <span class="build-tag">Privacy-first</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="mantra reveal">
     <div class="wrap mantra-inner">
-      <div class="mantra-label">How I work</div>
+      <div class="mantra-label mono">How I work</div>
       <p class="mantra-words">
-        <span class="word"><em>Dream</em> what adoption looks like. </span>
-        <span class="word"><em>Simplify</em> what blocks it. </span>
-        <span class="word"><em>Communicate</em> until the bridge is built.</span>
+        <em>Dream</em> what adoption looks like. <em>Simplify</em> what blocks it. <em>Communicate</em> until the bridge is built.
       </p>
       <p class="mantra-sub">
         Every launch, every curriculum, every tool follows the same three verbs.
@@ -336,8 +381,8 @@
   <section id="skills">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2><span class="idx">03</span>Skills</h2>
-        <div class="sec-meta">Three disciplines · one bridge</div>
+        <h2><span class="idx">04</span>Skills</h2>
+        <div class="sec-meta mono">Three disciplines · one bridge</div>
       </div>
       <div class="skills reveal">
         <div class="skill">
@@ -360,10 +405,10 @@
     <div class="wrap duo">
       <div class="reveal">
         <div class="sec-head" style="margin-bottom: 28px;">
-          <h2><span class="idx">04</span>Patents</h2>
+          <h2><span class="idx">05</span>Patents</h2>
         </div>
         <div class="patents-figure">
-          <div class="patents-num">7</div>
+          <div class="patents-num num">7</div>
           <div class="patents-note"><strong>4 as lead inventor</strong>, filed and granted through Medtronic</div>
         </div>
         <p class="patents-desc">
@@ -412,7 +457,7 @@
       </div>
       <div class="reveal">
         <div class="sec-head" style="margin-bottom: 28px;">
-          <h2><span class="idx">05</span>Education</h2>
+          <h2><span class="idx">06</span>Education</h2>
         </div>
         <div class="edu-school">Cornell University</div>
         <div class="edu-degree">B.S. Human Biology, Health &amp; Society · 2013</div>
@@ -427,8 +472,8 @@
   <section id="recognition">
     <div class="wrap">
       <div class="sec-head reveal">
-        <h2><span class="idx">06</span>Recognition</h2>
-        <div class="sec-meta">In their words</div>
+        <h2><span class="idx">07</span>Recognition</h2>
+        <div class="sec-meta mono">In their words</div>
       </div>
       <div class="quotes reveal">
         <figure class="quote">
@@ -459,55 +504,6 @@
       <p class="awards reveal"><span class="awards-label">Awards</span> Technical Fellows Award · Bakken Fellow endorsement · 4 consecutive years top ratings, culminating in "Exceptional Impact"</p>
     </div>
   </section>
-
-  <section id="projects">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <h2><span class="idx">07</span>Personal projects</h2>
-        <div class="sec-meta">Same impulse · different outlets</div>
-      </div>
-      <p class="projects-intro reveal">I like learning how things work and building things that do.</p>
-      <div class="projects reveal">
-        <div class="project">
-          <div class="project-head">
-            <h3 class="project-title">Mesh Audio</h3>
-            <div class="project-sub">Boutique guitar effects pedals</div>
-          </div>
-          <p class="project-desc">
-            Handbuilt analog effects pedals, including the JuiceJawn envelope filter
-            featuring custom-wound optocouplers. End-to-end product development from
-            circuit design through enclosure fabrication, with sales via Reverb and
-            direct commission. Clients include members of Phish, Dopapod, Muscle Tough,
-            and Grammy-winning producers.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">Analog Circuit Design</span>
-            <span class="project-tag">Manufacturing</span>
-            <span class="project-tag">E-commerce</span>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-head">
-            <h3 class="project-title">HomeVoice</h3>
-            <div class="project-sub">Local-first voice &amp; home automation stack</div>
-          </div>
-          <p class="project-desc">
-            Privacy-focused voice assistant exploring the separation between intent
-            recognition and command execution. Built on HomeAssistant with custom AI
-            orchestration, emphasizing robust validation and graceful handling of edge
-            cases. Deployed in production managing home automation, security, and
-            family-friendly interactions.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">AI Orchestration</span>
-            <span class="project-tag">HomeAssistant</span>
-            <span class="project-tag">Voice AI</span>
-            <span class="project-tag">Privacy-First</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
@@ -533,4 +529,3 @@
 
 </body>
 </html>
-
