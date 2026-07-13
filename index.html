@@ -98,11 +98,12 @@
 </script>
 
 <!-- Set theme before paint to avoid a flash of the wrong mode.
-     Dark is the default; light only when the visitor has toggled to it. -->
+     Dark is the default; light only when the visitor has toggled to it.
+     v2 key: ignores theme prefs persisted by the previous design. -->
 <script>
   (function () {
     var t;
-    try { t = localStorage.getItem('cdl-resume-theme'); } catch (e) {}
+    try { t = localStorage.getItem('cdl-theme-v2'); } catch (e) {}
     document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
   })();
 </script>
@@ -110,7 +111,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Geist:wght@400;450;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <script type="module" crossorigin src="/assets/index-BZjbgmF9.js"></script>
+  <script type="module" crossorigin src="/assets/index-DPLxl6IB.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-BViB_VAH.css">
 </head>
 <body>
