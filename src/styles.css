@@ -212,7 +212,6 @@ section { padding: 84px 0 0; }
   border-bottom: 1px solid var(--line); padding-bottom: 16px;
 }
 h2 { font-size: 32px; margin: 0; }
-h2 .idx { font-family: var(--font-mono); font-size: 13px; font-weight: 400; letter-spacing: 0.08em; color: var(--accent); vertical-align: 12px; margin-right: 12px; }
 .sec-meta { color: var(--ink-faint); white-space: nowrap; }
 
 /* ── Card motif: 3px accent left-rail ────────────── */
