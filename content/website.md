@@ -14,8 +14,8 @@
     <span class="stat-label">major platform launches</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number">7</span>
-    <span class="stat-label">patents filed (4 as lead inventor)</span>
+    <span class="stat-number">9</span>
+    <span class="stat-label">patents filed (6 as lead inventor)</span>
   </div>
 </div>
 
@@ -74,9 +74,19 @@ Communicating until adoption happens: the educational programs that prepare fiel
 <summary><h2>Patents & Innovation</h2><span class="collapse-icon"></span></summary>
 <div class="section-content">
 
-Invented automation systems that solved real scaling problems. **7 patents filed, 4 as lead inventor.**
+Invented automation systems that solved real scaling problems. **9 patents filed, 6 as lead inventor.**
 
 <div class="patent-grid">
+  <div class="patent-row">
+    <span class="patent-name patent-proprietary">Proprietary</span>
+    <span class="patent-year">2026</span>
+    <span class="patent-lead">Lead Inventor</span>
+  </div>
+  <div class="patent-row">
+    <span class="patent-name patent-proprietary">Proprietary</span>
+    <span class="patent-year">2026</span>
+    <span class="patent-lead">Lead Inventor</span>
+  </div>
   <div class="patent-row">
     <span class="patent-name patent-proprietary">Proprietary</span>
     <span class="patent-year">2025</span>
@@ -132,7 +142,7 @@ Clinical workflow design · Curriculum architecture · Certification program dev
 Deep brain stimulation programming · BrainSense neural sensing · Adaptive/closed-loop DBS · LFP signal interpretation · Implantable pulse generators · Movement disorder therapeutics
 
 **Automation & Applied AI**
-Workflow automation (7 patents) · Process optimization for scale · LLM application for training and documentation · Tool development for clinical operations
+Workflow automation (9 patents) · Process optimization for scale · LLM application for training and documentation · Tool development for clinical operations
 
 </div>
 

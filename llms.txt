@@ -15,7 +15,7 @@ Key facts (all detailed on the pages below):
   Identifier (2025).
 - Trained 70%+ of the current US DBS sales force; 2,000+ healthcare
   professionals certified globally.
-- Inventor on 7 patented automation tools (4 as lead inventor), including
+- Inventor on 9 patented automation tools (6 as lead inventor), including
   Automated Calibration of LFP Sensing Tools (EP4633448A1) and Bipolar/Unipolar
   Stimulation Conversion (WO2024025913A1).
 - Led the BrainSense Virtual Patient simulator (5–10× ROI).
