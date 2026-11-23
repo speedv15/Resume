@@ -14,8 +14,8 @@
     <span class="stat-label">major platform launches</span>
   </div>
   <div class="stat-item">
-    <span class="stat-number">10</span>
-    <span class="stat-label">patents filed (6 as lead inventor)</span>
+    <span class="stat-number">11</span>
+    <span class="stat-label">patent applications filed (7 as lead inventor)</span>
   </div>
 </div>
 
@@ -71,10 +71,10 @@ Communicating until adoption happens: the educational programs that prepare fiel
 </details>
 
 <details class="section-collapse">
-<summary><h2>Patents & Innovation</h2><span class="collapse-icon"></span></summary>
+<summary><h2>Patent Applications & Innovation</h2><span class="collapse-icon"></span></summary>
 <div class="section-content">
 
-Invented automation systems that solved real scaling problems. **10 patents filed, 6 as lead inventor.**
+Invented automation systems that solved real scaling problems. **11 patent applications filed, 7 as lead inventor.**
 
 <div class="patent-grid">
   <div class="patent-row">
@@ -85,7 +85,7 @@ Invented automation systems that solved real scaling problems. **10 patents file
   <div class="patent-row">
     <span class="patent-name patent-proprietary">Proprietary</span>
     <span class="patent-year">2026</span>
-    <span class="patent-lead">Lead Inventor</span>
+    <span class="patent-role">Co-Inventor</span>
   </div>
   <div class="patent-row">
     <span class="patent-name patent-proprietary">Proprietary</span>
@@ -94,22 +94,32 @@ Invented automation systems that solved real scaling problems. **10 patents file
   </div>
   <div class="patent-row">
     <span class="patent-name patent-proprietary">Proprietary</span>
+    <span class="patent-year">2026</span>
+    <span class="patent-lead">Lead Inventor</span>
+  </div>
+  <div class="patent-row">
+    <span class="patent-name patent-proprietary">Proprietary</span>
+    <span class="patent-year">2026</span>
+    <span class="patent-lead">Lead Inventor</span>
+  </div>
+  <div class="patent-row">
+    <span class="patent-name">Operational Modes for Closed-Loop Neuromodulation Systems</span>
+    <span class="patent-year">2026</span>
+    <span class="patent-lead">Lead Inventor</span>
+  </div>
+  <div class="patent-row">
+    <a href="https://patents.google.com/patent/WO2026115373A1" target="_blank" class="patent-name patent-link">Selecting Thresholds for Closed-Loop Neuromodulation Systems</a>
     <span class="patent-year">2025</span>
     <span class="patent-lead">Lead Inventor</span>
   </div>
   <div class="patent-row">
-    <span class="patent-name patent-proprietary">Proprietary</span>
-    <span class="patent-year">2024</span>
+    <a href="https://patents.google.com/patent/WO2026087974A1" target="_blank" class="patent-name patent-link">System for Patient and Adaptive Therapy Modeling and Simulation</a>
+    <span class="patent-year">2025</span>
     <span class="patent-lead">Lead Inventor</span>
   </div>
   <div class="patent-row">
-    <span class="patent-name patent-proprietary">Proprietary</span>
-    <span class="patent-year">2024</span>
-    <span class="patent-lead">Lead Inventor</span>
-  </div>
-  <div class="patent-row">
-    <span class="patent-name patent-proprietary">Proprietary</span>
-    <span class="patent-year">2024</span>
+    <a href="https://patents.google.com/patent/WO2026073022A1" target="_blank" class="patent-name patent-link">Patient Therapy Management Using Sensed Patient Data</a>
+    <span class="patent-year">2025</span>
     <span class="patent-role">Co-Inventor</span>
   </div>
   <div class="patent-row">
@@ -119,11 +129,6 @@ Invented automation systems that solved real scaling problems. **10 patents file
   </div>
   <div class="patent-row">
     <a href="https://patents.google.com/patent/WO2024025913A1" target="_blank" class="patent-name patent-link">Bipolar/Unipolar Stimulation Conversion</a>
-    <span class="patent-year">2023</span>
-    <span class="patent-role">Co-Inventor</span>
-  </div>
-  <div class="patent-row">
-    <span class="patent-name patent-proprietary">Proprietary</span>
     <span class="patent-year">2023</span>
     <span class="patent-role">Co-Inventor</span>
   </div>
@@ -147,7 +152,7 @@ Clinical workflow design · Curriculum architecture · Certification program dev
 Deep brain stimulation programming · BrainSense neural sensing · Adaptive/closed-loop DBS · LFP signal interpretation · Implantable pulse generators · Movement disorder therapeutics
 
 **Automation & Applied AI**
-Workflow automation (10 patents) · Process optimization for scale · LLM application for training and documentation · Tool development for clinical operations
+Workflow automation (11 patent applications) · Process optimization for scale · LLM application for training and documentation · Tool development for clinical operations
 
 </div>
 
