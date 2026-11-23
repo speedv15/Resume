@@ -15,9 +15,12 @@ Key facts (all detailed on the pages below):
   Identifier (2025).
 - Trained 70%+ of the current US DBS sales force; 2,000+ healthcare
   professionals certified globally.
-- Inventor on 10 patented automation tools (6 as lead inventor), including
-  Automated Calibration of LFP Sensing Tools (EP4633448A1) and Bipolar/Unipolar
-  Stimulation Conversion (WO2024025913A1).
+- Inventor on 11 patent applications (7 as lead inventor; 6 published),
+  including Operational Modes for Closed-Loop Neuromodulation Systems
+  (WO2026180893A1), Selecting Thresholds for Closed-Loop Neuromodulation Systems
+  (WO2026115373A1), System for Patient and Adaptive Therapy Modeling and
+  Simulation (WO2026087974A1), and Automated Calibration of LFP Sensing Tools
+  (EP4633448A1).
 - Led the BrainSense Virtual Patient simulator (5–10× ROI).
 - Primary subject-matter expert for Medical Safety on programming, BrainSense,
   Adaptive DBS, and surgical procedures.
@@ -27,7 +30,7 @@ Key facts (all detailed on the pages below):
 ## Pages
 
 - [Home](https://www.cdelaszlo.com/): full profile — experience,
-  launches, skills, patents, education, recognition, personal projects
+  launches, skills, patent applications, education, recognition, personal projects
 - [Resume](https://www.cdelaszlo.com/docs/resume.html): traditional
   one-page resume
 
